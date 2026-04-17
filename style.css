@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('images/header-bg.png');
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+a {
+   text-decoration: none; 
+}
+.header-content{
+   margin-bottom: 150px;
+   color: whitesmoke;
+   text-align: center;
+}
+.header-content h2{
+    font-size: 4vmin;
+
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background-color: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.header-content h1{
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.ctn{
+    padding: 8px 15px;
+    background-color: #fc036b;
+    border-radius: 30px;
+    color: whitesmoke;
+
+}.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+
+}
+ul{
+    list-style: none;
+    
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+   
+}
+.nav-links li{
+    margin: 0 30px;
+    
+}
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.active{
+    color: crimson;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu-btn{
+  display: none; /* hide by default */
+  width: 30px;
+  cursor: pointer;
+}
+
+  .logo {
+        position: static;
+        margin-bottom: 10px;
+        font-size: 5vmin;
+    }
+
+@media only screen and (max-width: 850px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        position: static;
+        margin-top:  20px;
+        font-size: 5vmin;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .header-content h1 {
+        font-size: 6vmin;
+    }
+
+    .header-content h2 {
+        font-size: 3.5vmin;
+    }
+
+    .ctn {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    .header-content {
+        margin-bottom: 100px;
+        padding: 0 20px;
+    }
+      .menu-btn {
+    display: block; /* show it on small screens */
+    position: absolute;
+    top: 35px;
+    right: 25px;
+    z-index: 1000;
+  }
+  .nav-links {
+    display: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  /* Show nav links when 'show' class is added by JS */
+  .nav-links.show {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+    
+
+
+
+
